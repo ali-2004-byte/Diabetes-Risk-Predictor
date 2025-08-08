@@ -23,12 +23,3 @@ A modern, dark-themed **Streamlit** web app for predicting diabetes risk based o
 - **ML Model**: Trained using scikit-learn
 - **Language**: Python
 
----
-
-## 🛠️ Setup Instructions
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/Diabetes-Risk-Predictor.git
-cd Diabetes-Risk-Predictor
