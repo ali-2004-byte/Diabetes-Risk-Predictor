@@ -66,7 +66,7 @@ with st.form("input_form"):
     with col1:
         age = st.number_input("Age", min_value=0.0, max_value=120.0, step=1.0)
         bmi = st.number_input("BMI", min_value=10.0, max_value=60.0, step=0.1)
-        blood_glucose_level = st.number_input("Blood Glucose Level", min_value=50, max_value=300, step=1)
+        blood_glucose_level = st.number_input("Blood Glucose Level", min_value=50, max_value=600, step=1)
 
     with col2:
         hypertension = st.selectbox("Hypertension", [0, 1], format_func=lambda x: "No" if x == 0 else "Yes")
@@ -96,4 +96,5 @@ if submitted:
         result = response.json()
         st.success(f"✅ Prediction: {result['prediction']}")
     except Exception as e:
+
         st.error(f"❌ Error contacting the prediction API: {e}")
